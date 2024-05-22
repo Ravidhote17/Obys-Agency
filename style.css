@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: "Plain Light", sans-serif;
+}
+
+.loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0b0b0b;
+    padding: 25vh 10vw;
+}
+
+.line{
+    /* background-color: red; */
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+.line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2vw;
+}
+
+.line1-part1 h5, .line1-part1 h6{
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+}
+
+.line1-part1 h5{
+    /* background-color: red; */
+    width: 5vw;
+    text-align: right;
+}
+
+.loader h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+}
+
+.loader h2{
+    font-size: 4.6vw;
+    text-transform: uppercase;
+    /* animation-name: anime; */
+    opacity: 0;
+    animation-duration: 1s;
+    /* color: white; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px white;
+        color: white;
+        font-weight: 500;
+        opacity: 1;
+    }
+    47%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px white;
+        color: white;
+        font-weight: 500;
+        opacity: 0;
+    }
+    50%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        opacity: 1;
+    }
+    100%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px white;
+        font-weight: 500;
+        color: transparent;
+        opacity: 0;
+    }
+}
+
+.main{
+    position: relative;
+    background-color: #111;
+}
+
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: rebeccapurple;
+}
