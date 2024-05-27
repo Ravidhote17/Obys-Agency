@@ -12,6 +12,17 @@ html, body{
     font-family: "Plain Light", sans-serif;
 }
 
+.crsr{
+    height: 2vw;
+    width: 2vw;
+    border: 1px solid white;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+}
+
 .loader{
     height: 100%;
     width: 100%;

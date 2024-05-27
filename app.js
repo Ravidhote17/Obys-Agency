@@ -1,3 +1,10 @@
+document.addEventListener("mousemove", function(dets){
+    gsap.to(".crsr",{
+        left: dets.x,
+        top: dets.y
+    })
+})
+
 function loadingAnimation(){
     
     var tl = gsap.timeline()
