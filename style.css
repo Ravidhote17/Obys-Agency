@@ -139,6 +139,9 @@ html, body{
 .hero{
     width: 75%;
     margin-left: 25%;
+    /* height: fit-content; */
+    overflow: hidden;
+    background-color: rgb(160, 132, 132);
 }
 
 .hero:nth-child(2){

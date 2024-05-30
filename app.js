@@ -1,16 +1,19 @@
 document.addEventListener("mousemove", function(dets){
-    gsap.to(".crsr",{
-        left: dets.x,
-        top: dets.y
-    })
+  gsap.to(".crsr",{
+      left: dets.x,
+      top: dets.y
+  })
 })
+
+Shery.makeMagnet(".nav-part2 h4", {
+});
 
 function loadingAnimation(){
     
     var tl = gsap.timeline()
     
     tl.from(".line h1", {
-        y: 150,
+        y: -150,
         stagger: 0.25,
         duration: 0.5,
         delay: 0.5
@@ -54,6 +57,15 @@ function loadingAnimation(){
     tl.to("#loader",{
         display: none
     })
+
+    tl.from(".hero", {
+        y: 150,
+        stagger: 0.25,
+        duration: 0.5,
+        delay: 0.5
+    })
+    
 }
 
 loadingAnimation()
+
